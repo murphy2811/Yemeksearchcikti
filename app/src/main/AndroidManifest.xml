@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YemekSiparisOkulProjesi"
+        tools:targetApi="31">
+        <activity
+            android:name=".sepeteekle.InfoActivity28"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity27"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity26"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity25"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity24"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity23"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity22"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity21"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity20"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity19"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity18"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity17"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity16"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity15"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity14"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity13"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity12"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity11"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity10"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity8"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity9"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoAcitivity4"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sepeteekle.InfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SiparislerimActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.WithActionBar" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.WithActionBar" />
+        <activity
+            android:name=".IcecekActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".TatliActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".KebapActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".DonerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".PizzaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".BurgerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".YiyecekCesitleriActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat" />
+        <activity
+            android:name=".KayitActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.WithActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.WithActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.WithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Database.OrderProvider"
+            android:authorities="com.example.orderapp"
+            android:exported="true" />
+    </application>
+
+</manifest>

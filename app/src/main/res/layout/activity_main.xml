@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED9D84"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="344dp"
+        android:layout_height="322dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/main_tr" />
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconIv"
+        android:text="¿KİM?"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textColor="#D30B0B"/>
+
+
+</RelativeLayout>

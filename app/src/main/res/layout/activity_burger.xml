@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED9D84"
+    tools:context=".BurgerActivity">
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="¿KİM?"
+        android:textColor="#D30B0B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCesit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BURGER ÇEŞİTLERİ"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvMarkaAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#F43D03"
+        android:textSize="20sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvCesit">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+            <androidx.cardview.widget.CardView
+                android:id="@+id/klasikburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_12"/>
+                <TextView
+                    android:id="@+id/tvklasik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Klasik Burger"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Köfte, Domates,Soğan,Cheddar Peyniri,Marul,Özel Burger Sosu"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/klasikbfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:onClick="klasikB"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:90TL"/>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/steakburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_13"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Steak Burger "
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Köfte,Füme Et, Domates,Soğan,Turşu,Marul,Özel Burger Sosu,Cheddar Peyniri"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/steakbfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:120TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mushroomburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_14"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Mushroom Burger "
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mushroomBaciklama"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/mushroombfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:115TL"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/BBQburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_15"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="BBQ Burger "
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Köfte,BBQ Sos, Domates,Soğan,Turşu,Marul,Özel Burger Sosu,Cheddar Peyniri"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/bbqbfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:130TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jalapenoburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_16"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Jalapeno Burger "
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Köfte,Jalapeno Turşu, Domates,Soğan,Turşu,Marul,Özel Burger Sosu,Cheddar Peyniri"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/jalapenobfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:120TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/patatesburger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_22"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Patates Kızartması"
+                    android:layout_marginTop="50dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/patatesfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:40TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

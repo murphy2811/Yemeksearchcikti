@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Menu"
+        android:title="Menü"
+        android:icon="@drawable/menu"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/profil"
+                android:title="Profil"
+                app:showAsAction="never">
+                <menu>
+                    <item android:id="@+id/siparis"
+                        android:title="Siparişlerim"/>
+                    <item android:id="@+id/profil1"
+                        android:title="Bilgilerim">
+
+                        <menu>
+                            <item android:id="@+id/profil2"
+                                android:title="Kişisel Bilgilerim"/>
+
+                        </menu>
+
+                    </item>
+                </menu>
+
+            </item>
+
+            <item android:id="@+id/sepet"
+                android:title="Sepetim"
+                app:showAsAction="never"/>
+
+
+        </menu>
+    </item>
+    <item android:id="@+id/cikis"
+        android:title="CIKIS"
+        android:icon="@drawable/cikisikon"
+        app:showAsAction="ifRoom" />
+
+
+
+</menu>

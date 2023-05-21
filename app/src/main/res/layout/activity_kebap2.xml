@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ED9D84"
+    android:layout_height="match_parent"
+    tools:context=".KebapActivity2">
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="¿KİM?"
+        android:textColor="#D30B0B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCesit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KEBAP ÇEŞİTLERİ"
+        android:layout_below="@+id/tvMarkaAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#F43D03"
+        android:textSize="20sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvCesit"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/adanakebap"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_27"/>
+                <TextView
+                    android:id="@+id/tvklasik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Adana Kebap"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adana Kebap,Maydanoz,Tırnak Pide,Sumaklı Soğan Salatası,Közlenmiş Biber"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/adanakfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:130TL"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tavuksiskebap"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_28"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Tavuk Şiş "
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tavuk Şiş,salata"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tavuksisfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:100TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cigersiskebap"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_29"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Ciğer Şiş"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ciğer Şiş,Bulgur Pilavı,Közlenmiş Biber,Domates,Maydanoz"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/cigersisfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:135TL"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/beytikebap"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_30"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Beyti "
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beyti,Bulgur Pilavı,Közlenmiş Domates,Közlenmiş Biber,Yoğurt,Maydanoz"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="50dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/beytikfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:130TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/iclikoftekebap"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_31"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="İçli Köfte"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tane ile Satılmaktadır!"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="50dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/iclikoftekfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:15TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

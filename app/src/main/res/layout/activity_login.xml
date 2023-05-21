@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="¿KİM?"
+        android:textColor="#D30B0B"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="GİRİŞ"
+        android:textSize="34sp"
+        android:textColor="#F15E31"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMarkaAdi" />
+
+
+
+
+        <EditText
+            android:id="@+id/edKulAdi"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:drawableRight="@drawable/person"
+            android:backgroundTint="#FBC8B8"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:paddingLeft="25dp"
+            android:paddingRight="10dp"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/edsekil"
+            app:layout_constraintTop_toBottomOf="@+id/tvGiris" />
+
+        <EditText
+            android:id="@+id/edSifre"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="77dp"
+            android:paddingLeft="25dp"
+            android:drawableRight="@drawable/password"
+            android:ems="10"
+            android:hint="Şifre"
+            android:backgroundTint="#FBC8B8"
+            android:paddingRight="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/edsekil"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edKulAdi" />
+
+        <Button
+            android:id="@+id/btnGiris"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="78dp"
+            android:background="@drawable/btnsekil"
+            android:text="GİRİŞ"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edSifre" />
+
+    <TextView
+        android:id="@+id/tvHesapYok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Bir Hesabınız Yok Mu?"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

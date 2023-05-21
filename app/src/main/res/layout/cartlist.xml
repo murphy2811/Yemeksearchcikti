@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:text="Food Name"
+        android:textStyle="bold"
+        android:id="@+id/foodNameinOrderSummary"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:layout_toRightOf="@+id/foodNameinOrderSummary"
+        android:text="x"
+        android:textStyle="bold"
+        android:id="@+id/quantityinOrderSummary"
+        android:layout_marginLeft="10dp"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Secenek1"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/foodNameinOrderSummary"
+        android:text="Seçenek 1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Secenek1"
+        android:id="@+id/Secenek2"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/foodNameinOrderSummary"
+        android:text="Seçenek 2"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="$10"
+        android:id="@+id/priceinOrderSummary"
+        android:layout_marginRight="10dp"/>
+
+
+
+</RelativeLayout>

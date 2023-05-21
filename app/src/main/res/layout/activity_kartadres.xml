@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7AFA7F"
+    android:layout_height="match_parent"
+    tools:context=".kartadres">
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="¿KİM?"
+        android:textColor="#D30B0B"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/tvMarkaAdi"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardvBurger"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#95D9F8"
+                >
+                <EditText
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:hint="ACIKLAMA"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:background="#95D9F8"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1in"
+                    android:text="AÇIKLAMA"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardvPizza"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#95D9F8"
+                >
+
+                <EditText
+                    android:layout_width="1in"
+                    android:hint="ADRES"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="#95D9F8"
+                    android:elevation="3dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1in"
+                    android:text="ADRES BİLGİLERİ"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardvDoner"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#95D9F8"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="40dp"
+                    android:text="KART BİLGİLERİ"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/isim_soyisim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginLeft="100dp"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:hint="İsim Soyisim"
+                    android:textSize="18dp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/kart_numarası"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginLeft="100dp"
+                    android:ems="10"
+                    android:hint="Kart numarası"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/cvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginLeft="100dp"
+                    android:ems="10"
+                    android:hint="CVV"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    />
+
+                <EditText
+                    android:id="@+id/son_kullanma_tarihi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginLeft="100dp"
+                    android:ems="10"
+                    android:hint="Son Kullanma Tarihi"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:inputType="textPassword"
+
+                    android:paddingLeft="8dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSatınAl"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="400dp"
+                    android:layout_marginLeft="130dp"
+                    android:background="@color/purple_700"
+                    android:text="SATIN AL"
+                    android:textStyle="bold"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

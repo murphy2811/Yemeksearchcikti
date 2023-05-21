@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED9D84"
+    tools:context=".TatliActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvMarkaAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="¿KİM?"
+        android:textColor="#D30B0B"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCesit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TATLI ÇEŞİTLERİ"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvMarkaAdi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#F43D03"
+        android:textSize="20sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvCesit"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/eklertatli"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_32"/>
+                <TextView
+                    android:id="@+id/tvklasik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Ekler"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginTop="40dp"
+
+                    android:paddingRight="20dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tane ile Satılmaktadır!"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="70dp"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/eklerfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:10TL"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tiramisutatli"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_33"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Tiramisu "
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/tiramisufiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:50TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/magnoliatatli"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_34"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Magnolia"
+                    android:layout_marginTop="40dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/magnoliafiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:50TL"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/baklavatatli"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_35"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="Fıstıklı Baklava "
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:paddingRight="20dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tane ile Satılmaktadır!"
+                    android:layout_marginLeft="1.1in"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="80dp"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/baklavafiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:drawableRight="@drawable/cart"
+                    android:textColor="@color/black"
+                    android:text="Fiyat:15TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sutlactatli"
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FAF2AB">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/img_36"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1in"
+                    android:text="FIRIN SÜTLAÇ "
+                    android:layout_marginTop="40dp"
+                    android:paddingRight="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/sutlacfiyat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1.1in"
+                    android:layout_marginTop="140dp"
+                    android:gravity="center"
+                    android:paddingRight="40dp"
+                    android:textColor="@color/black"
+                    android:drawableRight="@drawable/cart"
+                    android:text="Fiyat:40TL"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

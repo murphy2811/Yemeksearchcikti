@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/resim"
+            android:layout_width="1in"
+            android:layout_height="1in"
+            android:layout_margin="5dp"
+            android:elevation="3dp"
+            android:src="@drawable/img_12"/>
+        <TextView
+            android:id="@+id/ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1in"
+            android:text="Klasik Burger"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/aciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Köfte, Domates,Soğan,Cheddar Peyniri,Marul,Özel Burger Sosu"
+            android:layout_marginLeft="1.1in"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/fiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.1in"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:paddingRight="40dp"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/cart"
+            android:text="Fiyat:90TL"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp"
+        android:id="@+id/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:id="@+id/orderSummary"
+                android:text="SEPETİM"/>
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:paddingTop="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/list"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="3dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/siparis"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Sipariş ver"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/clearthedatabase"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Sepeti Temizle"
+                    android:textColor="@android:color/white" />
+                <Button
+                    android:id="@+id/devamAliveris"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:background="@android:color/holo_red_dark"
+                    android:text="Alışverışe devam et"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/toplamFiyat"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:text="0 $"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
