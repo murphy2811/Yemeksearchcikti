@@ -61,7 +61,8 @@ public class SummaryActivity extends AppCompatActivity implements LoaderManager.
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(SummaryActivity.this,kartadres.class);
-
+            intent.putExtra("Toplam",toplamFiyatt.getText().toString());
+            startActivity(intent);
         }
     });
 

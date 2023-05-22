@@ -42,6 +42,7 @@
                 app:cardBackgroundColor="#95D9F8"
                 >
                 <EditText
+                    android:id="@+id/aciklamaa"
                     android:layout_width="1in"
                     android:layout_height="1in"
                     android:hint="ACIKLAMA"
@@ -71,6 +72,7 @@
                 >
 
                 <EditText
+                    android:id="@+id/adress"
                     android:layout_width="1in"
                     android:hint="ADRES"
                     android:layout_height="1in"
@@ -95,87 +97,82 @@
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
                 android:layout_margin="10dp"
-                app:cardElevation="5dp"
-                app:cardCornerRadius="20dp"
                 app:cardBackgroundColor="#95D9F8"
-                >
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="95dp"
                     android:layout_marginTop="40dp"
                     android:text="KART BİLGİLERİ"
+                    android:textColor="@color/black"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/isim_soyisim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="110dp"
                     android:layout_marginLeft="100dp"
+                    android:layout_marginTop="110dp"
                     android:ems="10"
-                    android:textStyle="bold"
                     android:hint="İsim Soyisim"
-                    android:textSize="18dp"
                     android:inputType="textPersonName"
                     android:paddingLeft="8dp"
-                    />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/kart_numarası"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
                     android:layout_marginLeft="100dp"
+                    android:layout_marginTop="180dp"
                     android:ems="10"
                     android:hint="Kart numarası"
-                    android:textStyle="bold"
-                    android:textSize="18dp"
                     android:inputType="textEmailAddress"
                     android:paddingLeft="8dp"
-                    />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/cvv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="250dp"
                     android:layout_marginLeft="100dp"
+                    android:layout_marginTop="250dp"
                     android:ems="10"
                     android:hint="CVV"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
                     android:inputType="textPassword"
                     android:paddingLeft="8dp"
-                    />
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/son_kullanma_tarihi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="320dp"
                     android:layout_marginLeft="100dp"
+                    android:layout_marginTop="320dp"
                     android:ems="10"
                     android:hint="Son Kullanma Tarihi"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
                     android:inputType="textPassword"
-
                     android:paddingLeft="8dp"
-                    />
+                    android:textSize="18dp"
+
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btnSatınAl"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="400dp"
                     android:layout_marginLeft="130dp"
+                    android:layout_marginTop="400dp"
                     android:background="@color/purple_700"
                     android:text="SATIN AL"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
 
             </androidx.cardview.widget.CardView>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.YemekSiparisOkulProjesi"
         tools:targetApi="31">
         <activity
+            android:name=".kartadres"
+            android:exported="false" />
+        <activity
             android:name=".sepeteekle.InfoActivity28"
             android:exported="false" />
         <activity
